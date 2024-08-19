@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe-to-hai</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar/dist/simplebar.min.css">
+
+</head>
+
+<body>
+    <div class="mainA flex align-center justify-center bg-black relative">
+        <div class="left">
+            <div class="box1">
+                <!-- <div class="logo">
+                    <i class="ri-spotify-fill"></i>
+                </div> -->
+                <div class="home flex align-center">
+                    <i class="ri-home-line font-bold"></i>
+                    <p class="font-bold home-icon color-white">Home</p>
+                </div>
+                <div class="search  flex align-center">
+                    <i class="ri-search-line font-bold"></i>
+                    <p class="font-bold search-icon color-white">Search</p>
+                </div>
+            </div>
+
+            <div class="box2 ">
+                <div class="box2A flex align-center">
+                    <i class="ri-folder-music-fill font-bold"></i>
+                    <p class="font-bold color-white">Playlist Songs</p>
+                </div>
+
+                <div class="scrollableContent">
+                    <div class="LeftSongsCardContainer">
+
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p class="color-white font-bold flex align-center justify-center">Made with ❤️ by Hemant</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="box3 flex space-bet">
+                <div class="flex">
+                    <div class="hamBurger">
+                        <i class="ri-menu-unfold-3-fill"></i>
+                    </div>
+                    <div class="header color-white font-bold">
+                        <!-- <span class="p-30"><i class="ri-arrow-left-s-line"></i></span>
+                        <span class="p-10"><i class="ri-arrow-right-s-line"></i></span> -->
+                        <img src="images/vibe to hai.png" alt="logo">
+                    </div>
+                </div>
+
+                <div class="login">
+                    <a class="logSignBtn" title="Account" href="#"><i class="ri-user-fill"></i></a>
+                </div>
+            </div>
+            <div class="R-box1">
+                <h2>Most Loved Playlist</h2>
+            </div>
+            <div class="cardsContainer">
+      
+            </div>
+
+        </div>
+        <div class="playBarBox absolute ">
+            <div class="playBar flex align-center space-bet">
+                <div class="songImage">
+                    <div class="playedSong">
+                        <img src="images/songicon.png"
+                            alt="">
+                    </div>
+                    <div class="songNartist">
+                        <h5 id="songDetails">No Song Is Playing</h5>
+                            
+                            <h6 id="artistDetails">Album</h6>
+
+                    </div>
+                </div>
+
+                <div class="playBarMenu flex flex-dir-col gap-1">
+                    <div class="flex align-center justify-center gap-2">
+                        <div class="previousSong flex justify-center align-center">
+                            <i class="ri-skip-back-line"></i>
+                        </div>
+                        <div class="playPauseBtn flex justify-center align-center">
+                            <img id="play" src="images/play.svg" alt="">
+                        </div>
+                        <div class="nextSong flex justify-center align-center">
+                            <i class="ri-skip-forward-line"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="songTime flex gap-1">
+                    <div class="songStartTime">
+                        00:00
+                    </div>
+                    <div class="seekBar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="songTotalTime">
+                        00:00
+                    </div>
+                </div>
+                <div class="extraMenu flex align-center">
+                    <div class="volumeBtn flex align-center justify-center">
+                        <i class="ri-volume-down-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/simplebar/dist/simplebar.min.js"></script>
+
+</body>
+
+</html>
