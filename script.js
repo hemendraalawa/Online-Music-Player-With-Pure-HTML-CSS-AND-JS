@@ -40,7 +40,7 @@ async function findSongs(folder) {
 // default songs function ---start---
 // yeh function left display me default songs ke liye bnaya gya hai jo songs directly fetch ho rhe hai default songs folder se
 async function defaultSongs() {
-  let response2 = await fetch("./defaultsongs");
+  let response2 = await fetch("/defaultsongs");
   let data2 = await response2.text();
   let div = document.createElement("div");
   div.innerHTML = data2;
