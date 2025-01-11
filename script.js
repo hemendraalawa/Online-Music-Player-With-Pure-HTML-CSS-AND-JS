@@ -15,7 +15,7 @@ var songs;
 let currentFolder;
 async function findSongs(folder) {
   currentFolder = folder;
-  let response = await fetch(`/cards/${folder}/`);
+  let response = await fetch(`./cards/${folder}/`);
   // console.log(response);
   let data = await response.text();
   // console.log(data);
@@ -40,7 +40,7 @@ async function findSongs(folder) {
 // default songs function ---start---
 // yeh function left display me default songs ke liye bnaya gya hai jo songs directly fetch ho rhe hai default songs folder se
 async function defaultSongs() {
-  let response2 = await fetch("/defaultsongs");
+  let response2 = await fetch("./defaultsongs");
   let data2 = await response2.text();
   let div = document.createElement("div");
   div.innerHTML = data2;
@@ -219,7 +219,7 @@ async function leftDisplayUpdate() {
       let folder = decodeURIComponent(e.href.split("/").slice(-1)[0]);
       // console.log(folder);
 
-      let data = await fetch(`/cards/${folder}/info.json`);
+      let data = await fetch(`./cards/${folder}/info.json`);
       let response = await data.json();
 
       let card = document.createElement("div");
